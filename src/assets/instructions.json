@@ -56,7 +56,7 @@
   },
   {
     "page": 12,
-    "text": "<p>The game will probably take you 30 minutes. If you do not have 30 minutes to complete this task, please exit now and do not proceed.</p><p>If you would like to play this game, please proceed to answer the quiz questions correctly in order to enter the game and be paired with other players online.</p><p><strong>If you are still unsure about the task instructions, please use the 'back' button to review the instructions. Failure to answer all quiz questions correctly will result in the termination of the session.</strong></p>",
+    "text": "<p>The game will probably take you 30 minutes. If you do not have 30 minutes to complete this task, please exit now and do not proceed.</p><p>If you would like to play this game, please proceed to answer the quiz questions correctly in order to enter the game.</p><p><strong>If you are still unsure about the task instructions, please use the 'back' button to review the instructions. Failure to answer all quiz questions correctly will result in the termination of the session.</strong></p>",
     "img": "/assets/images/image1.png"
   }
 ]
