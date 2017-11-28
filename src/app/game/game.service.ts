@@ -56,24 +56,4 @@ export class GameService {
     }
     return ids;
   }
-
-  setDelay(event: string, threshold: number, minTime: number): void {
-    let prob = Math.random();
-    if (prob <= threshold) {
-      this.delayEvents[event] = true;
-      let time = Math.random() * 3500 + minTime;
-      setTimeout(() => {
-        this.delayEvents[event] = false;
-        this.setTime(event);
-      }, time);
-    } else {
-      this.setTime(event);
-    }
-  }
-
-  setTime(event: string): void {
-    if (event === 'isWaitingForOpp') {
-      this.endowmentT0 = performance.now();
-    }
-  }
 }

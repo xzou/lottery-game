@@ -41,9 +41,9 @@ export class GameComponent implements AfterViewInit, OnDestroy {
   playerImgPath: string = '/assets/images/player_purple.png';
   trialNumber: number = 1;
   imgPaths: string[] = [
-    '/assets/images/player_blue.png',
-    '/assets/images/player_yellow.png',
-    '/assets/images/player_orange.png'
+    '/assets/images/machine_blue.png',
+    '/assets/images/machine_yellow.png',
+    '/assets/images/machine_orange.png'
   ]
   oppSettings: {
     id: number,
@@ -111,7 +111,6 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     this.drift();
     this.curParticipantService.addOpponent(oppId + 1);
     this.curParticipantService.addProportion(this.opponent.player.meanProp);
-    this.gameService.setDelay('isWaitingForOpp', 0.5, 500);
   }
 
   setEndowment() {
@@ -123,7 +122,6 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     this.curParticipantService.addReturn(this.oppReturn);
     this.curParticipantService.addNetGain(this.netGain);
     this.curParticipantService.addActualProp(this.opponent.player.proportion);
-    this.gameService.setDelay('isWaitingForReturn', 1, 1000);
     this.flip = 'active';
   }
  

@@ -93,6 +93,11 @@ h4 {
   background-repeat: repeat;
 }
 
+.participant img {
+  width: 210px;
+  padding-left: 0;
+}
+
 .interactive-panel p {
   font-size: 20px;
 }

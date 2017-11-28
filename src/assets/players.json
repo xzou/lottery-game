@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Chris",
+        "name": "Machine A",
         "meanProp": 0.02,
         "directions": [1, 1, -1],
         "img": "",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "John",
+        "name": "Machine B",
         "meanProp": 0.25,
         "directions": [-1, 1, 1],
         "img": "",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Tom",
+        "name": "Machine C",
         "meanProp": 0.45,
         "directions": [-1, -1, 1],
         "img": "",
