@@ -2,15 +2,15 @@
   {
     "id": 1,
     "question": "<h3>What happens if you decide to invest $0.40 during a round?</h3>",
-    "a": "I get to keep $0.60 for myself, and the other $0.40 gets quadrupled to $1.60. The other player then decides how much to give back to me.",
-    "b": "I get to keep $0.40 for myself, and then the other $0.60 gets tripled to $1.80. The other player then gives me back half of it.",
+    "a": "I get to keep $0.60 for myself, and the other $0.40 gets quadrupled to $1.60. The slot machine will then return some portion of it.",
+    "b": "I get to keep $0.40 for myself, and then the other $0.60 gets tripled to $1.80. The slot machine then gives me back half of it.",
     "ans": "1"
   },
   {
     "id": 2,
     "question": "<h3>What happens when you press the red button?</h3>",
-    "a": "I will be asked to select one of three players to play with on that round.",
-    "b": "I will be randomly paired with one of three players on that round.",
+    "a": "I will be asked to select one of three slot machines to play on that round.",
+    "b": "I will be randomly paired with one of three slot machines on that round.",
     "ans": "2"
   },
   {

@@ -26,7 +26,7 @@
   <h4>Correct: {{ numCorrect }}/3</h4>
   <div *ngIf="numCorrect === 3">
     <span [innerHTML]="feedback.a"></span>
-    <tg-nav-button url="players-search" label="Proceed"></tg-nav-button>
+    <tg-nav-button url="game" label="Proceed"></tg-nav-button>
   </div>
 
   <div *ngIf="numCorrect < 3" class="feedback-b">

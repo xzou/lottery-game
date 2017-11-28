@@ -15,8 +15,7 @@
   <div class="participant card player">
     <div class="player-info">
       <img [src]="playerImgPath">
-      <!--        <div class="player-name">{{ curParticipantService.name | capitalize}}</div>  -->
-      <div class="player-name">You</div>
+      <div class="player-name">{{ curParticipantService.name | capitalize}}</div>  
     </div>
   </div> <!-- #participant -->
 
@@ -50,9 +49,7 @@
       </div>
     </div>
   </div>  <!-- #opponent -->
-
 </div> <!-- #trial-panel -->
-</div> <!-- #game-panel -->
 
 <div *ngIf="isGameOver" class="game-over-panel card">
     <h4>Congratulations!</h4> 
