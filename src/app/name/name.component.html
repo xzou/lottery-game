@@ -1,0 +1,28 @@
+<div class="card">
+  <h1>Hello!</h1>
+  <p>Please fill out the following:</p>
+  <form #nameForm="ngForm" (ngSubmit)="createParticipant()" class="type1-text" autocomplete="off">
+    <div class="form-text">
+      <div id="name-label" class="text-label"><label for="name">First name</label></div>
+      <input type="text" id="name" name="name" required [(ngModel)]="firstName" #name="ngModel">
+      <div *ngIf="name.invalid && (name.dirty || name.touched)" class="warning">
+        <div *ngIf="name.errors.required">*Name is required</div>
+      </div>
+    </div>
+    <div class="form-text">
+      <div id="age-label" class="text-label"><label for="age">Age</label></div>
+      <input type="text" id="age" name="age" required [(ngModel)]="age" #playerAge="ngModel">
+      <div *ngIf="playerAge.invalid && (playerAge.dirty || playerAge.touched)" class="warning">
+        <div *ngIf="playerAge.errors.required">*Age is required</div>
+      </div>
+    </div>
+    <ul>
+      <li *ngFor="let option of genders">
+        <input type="radio" [id]="option" name="playerGender" [(ngModel)]="gender" [value]="option">
+        <label for="{{option}}">{{ option | capitalize }}</label>
+      </li>
+    </ul>
+      <button type="submit" [disabled]="!isValid()">Submit</button>
+  </form>
+</div> <!-- .card -->
+

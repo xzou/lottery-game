@@ -1,0 +1,18 @@
+<div class="opponent-search card">
+  <div *ngIf="!opponentFound" class="finding-opponent">
+    <p>
+      Matching with players
+      <span class="dot">.</span>
+      <span class="dot">.</span>
+      <span class="dot">.</span>
+    </p>
+  </div>
+
+  <div *ngIf="opponentFound" class="opponent-found type1-text">
+    <p>Players found! You will be playing with:</p>
+    <div *ngFor="let player of players">{{ player }}</div>
+    <div class="nav-button">
+      <tg-nav-button url="game" label="Proceed"></tg-nav-button>
+    </div>
+  </div>
+</div> <!-- #opponent-search -->

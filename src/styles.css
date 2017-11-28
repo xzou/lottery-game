@@ -1,0 +1,128 @@
+/* Global styles */
+ 
+@import url('https://fonts.googleapis.com/css?family=Raleway|Corben');
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  background-color: #3bd4f2;
+}
+
+.type1-text {
+  font-family: 'Raleway', sans-serif;
+  color: #444;
+}
+
+.type2-text {
+  font-family: 'Corben', sans-serif;
+  color: #444;
+}
+
+h1, h2 {
+  font-family: 'Corben', sans-serif;
+  color: #444;
+  font-weight: 900;
+  text-shadow: 2px 0 #444;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #aaa;
+  margin: 0 0 15px 0;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #444;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 45px;
+  text-align: center;
+  line-height: 110%;
+  padding-bottom: 15px;
+}
+
+h3, h4 {
+  font-family: 'Raleway';
+}
+
+h3 {
+  font-size: 18px;
+  color: #222;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+button {
+  width: 120px;
+  height: 35px;
+  border: none;
+  background-color: #f71b44;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Raleway';
+  outline: none;
+}
+
+button:hover:enabled,
+label:hover {
+  cursor: crosshair;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #aaa;
+  color: #888;
+  background: white;
+}
+
+.card {
+  background-color: white;
+  border-radius: 60px;
+  box-sizing: border-box;
+  -webkit-box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+  -moz-box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+  box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+}
+
+.card.player {
+  width: 280px;
+  height: 380px;
+}
+
+.player-info {
+  text-align: center;
+  padding-top: 8%;
+}
+
+.player-name {
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+.player img {
+  width: 220px;
+  margin-bottom: 6%;
+}
+
+@keyframes blink {50% { color: transparent }}
+.dot { animation: 1s blink infinite }
+.dot:nth-child(2) { animation-delay: 250ms }
+.dot:nth-child(3) { animation-delay: 500ms }

@@ -1,0 +1,21 @@
+<div class="instruction">
+  <div *ngIf="page === 1" class="welcome-text card">
+    <h2>Welcome {{ curParticipantService.name | capitalize}}!</h2>
+    <div [innerHTML]="text"></div>
+    <button (click)="setPage(page + 1)">Next</button>
+  </div> <!-- #welcome-text -->
+
+  <div *ngIf="page > 1" class="instruction-text card">
+    <h2>Instructions</h2>
+    <div [innerHTML]="text"></div>
+    <div class="instruction-buttons">
+      <button (click)="setPage(page - 1)">Back</button>
+      <button *ngIf="page < maxPage" (click)="setPage(page + 1)">Next</button> 
+    </div> <!-- #instructions-buttons -->
+    <tg-nav-button *ngIf="page === maxPage" url="quiz" label="Go to Quiz"></tg-nav-button>
+  </div> <!-- #instruction-text -->
+
+  <div *ngIf="page > 1" class="instruction-image card"><img [src]="imgSrc"></div>
+
+</div> <!-- #instruction -->
+

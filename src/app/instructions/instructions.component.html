@@ -1,0 +1,5 @@
+<div id="instructions">
+  <div *ngFor="let instruction of instructions">
+    <tg-instruction *ngIf="page === instruction.page" [page]="instruction.page" [text]="instruction.text" [imgSrc]="instruction.img" [maxPage]="maxPage" (pageChange)="pageChange($event)"></tg-instruction>
+  </div>
+</div> <!-- #instructions -->

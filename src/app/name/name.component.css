@@ -1,0 +1,116 @@
+/* GENERAL */
+.card {
+  width: 430px;
+  height: 580px;
+  margin: auto;
+  margin-top: 5%; 
+  text-align: center;
+  padding: 2% 5% 0 5%;
+}
+
+/* TEXT INPUT */
+input[type=text] {
+  box-sizing: border-box;
+  margin: 0 auto 33px auto;
+  display: block;
+  width: 220px;
+  height: 45px;
+  text-align: center;
+  clear: left;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+input[type=text]:focus {
+  outline: none !important;
+  border: 1px solid #3bd4f2;
+  box-shadow: 0 0 3px #ccc;
+}
+
+/* TEXT INPUT LABELS */ 
+.form-text {
+  width: 220px;
+  margin: auto;
+}
+
+.text-label {
+  height: 0;
+  border-bottom: 28px solid #333;
+  border-right: 25px solid transparent;
+  text-align: left;
+  font-size: 15px;
+}
+
+#name-label {
+  width: 120px;
+}
+
+#age-label {
+  width: 60px;
+}
+
+.form-text label {
+  color: white;
+  display: block;
+  padding: 4px 0 0 10px;
+}
+
+/* RADIO INPUT + LABELS */
+input[type=radio] {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  width: 220px;
+  margin: auto;
+  padding-left: 0;
+}
+
+ul li {
+  float: left;
+  width: 105px;
+  height: 45px;
+  position: relative;
+  margin-right: 10px;
+  padding-left: 0;
+  background: #bbb;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+li label {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 12px;
+}
+
+li label:hover {
+  background: #777;
+  color: white;
+}
+
+li input[type=radio]:checked + label {
+  background: #555;
+  color: white;
+}
+
+/* SUBMIT BUTTON */
+button {
+  clear: both;
+  margin-top: 33px;
+}
+
+/* VALIDATION MESSAGES */
+.warning {
+  color: #f18c8b;
+  text-align: left;
+  margin: -31px 0 15px 0;
+  font-size: 14px;
+}

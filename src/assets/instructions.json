@@ -1,0 +1,63 @@
+[
+  { 
+    "page": 1, 
+    "text": "<p>Today you'll be playing a game that involves making a series of decisions with other players online. Your goal in the game is to earn as much money as possible, as the amount of money you earn will determine how much money you will receive in bonus payment at the end of the game.</p><p><strong>Note:</strong> Please use only the navigation buttons provided to you, and do not use your browser navigation buttons or refresh the page. Using the browser \"Back\" or \"Forward\" buttons or refreshing the page will lead to your results not being saved. Thank you for your cooperation!</p>",
+    "img": ""
+  }, 
+  {
+    "page": 2,
+    "text": "<p>The game will involve a series of rounds with <strong>3 different players</strong> that you will be paired with online.</p>",
+    "img": "/assets/images/image1.png"
+  }, 
+  {
+    "page": 3,
+    "text": "<p>On each round, you will first press the <strong>red</strong> button, which will pair you with the other player you are playing with on that <strong>round</strong>.</p>",
+    "img": "/assets/images/image2.png"
+  },
+  {
+    "page": 4,
+    "text": "<p>After you have been paired with a player on that round, you will be asked to decide how much of $1.00 you would like to invest by sending it to the other player and how much to keep for yourself.</p><p>Using the slider scale provided, you can decide how much of $1.00 to invest in $0.10 increments.</p>",
+    "img": "/assets/images/image3.png"
+  },
+  {
+    "page": 5,
+    "text": "<p>However, you must make a minimum investment of $0.10, so <strong>$0 is not an option.</strong></p><p>Otherwise, feel free to invest as much or as little as you would like.</p>",
+    "img": "/assets/images/image3.png"
+  },
+  {
+    "page": 6,
+    "text": "<p>After you decide how much of the $1.00 you want to invest in the other player, your investment will be <strong>quadrupled (x4)!</strong></p>",
+    "img": "/assets/images/image4.png"
+  },
+  {
+    "page": 7,
+    "text": "<p>The other player can decide to keep all the money for themselves or <strong>give you back some portion of it.</strong></p>",
+    "img": "/assets/images/image5.png"
+  },
+  {
+    "page": 8,
+    "text": "<p>To recap, on each round of this game you will first press the <strong>red</strong> button and you will be paired with one of 3 players.</p><p>You will then decide how much of $1.00 you would like to invest and how much to keep for yourself, keeping in mind that <strong>$0 is not an option.</strong></p>",
+    "img": "/assets/images/image2.png"
+  },
+  {
+    "page": 9,
+    "text": "<p>Whatever money you decide to invest will then be <strong>quadrupled (x4)</strong> as it is sent to the other player.</p><p>The other player will then decide how much money they would like to keep for themselves and how much to return back to you.</p>",
+    "img": "/assets/images/image4.png"
+  },
+  {
+    "page": 10,
+    "text": "<p>After the other player makes their decision, you will be notified of their decisions and the outcome on that round.</p><p>You will then push the button again to play with another player.</p>",
+    "img": "/assets/images/image6.png"
+  },
+  {
+    "page": 11,
+    "text": "<p>At the end of the game, we will randomly select two of your rounds to determine your bonus payment, so <strong>the best strategy is to receive as much money as possible on each round.</strong></p>",
+    "img": "/assets/images/image6.png"
+  },
+  {
+    "page": 12,
+    "text": "<p>The game will probably take you 30 minutes. If you do not have 30 minutes to complete this task, please exit now and do not proceed.</p><p>If you would like to play this game, please proceed to answer the quiz questions correctly in order to enter the game and be paired with other players online.</p><p><strong>If you are still unsure about the task instructions, please use the 'back' button to review the instructions. Failure to answer all quiz questions correctly will result in the termination of the session.</strong></p>",
+    "img": "/assets/images/image1.png"
+  }
+]
+

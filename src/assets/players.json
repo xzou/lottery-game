@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Chris",
+        "meanProp": 0.02,
+        "directions": [1, 1, -1],
+        "img": "",
+        "highlight": "white"
+    },
+    {
+        "id": 2,
+        "name": "John",
+        "meanProp": 0.25,
+        "directions": [-1, 1, 1],
+        "img": "",
+        "highlight": "white"
+    },
+    {
+        "id": 3,
+        "name": "Tom",
+        "meanProp": 0.45,
+        "directions": [-1, -1, 1],
+        "img": "",
+        "highlight": "white"
+    }
+]
+

@@ -1,0 +1,82 @@
+<div *ngIf="!isGameOver">
+<div class="round-num"><h4>Round {{ trialNumber }}</h4></div>
+<div [hidden]="inTrial"class="opponents-panel"> 
+  <div id="opponents">
+    <ul>
+      <li *ngFor="let opponent of oppSettings">
+        <tg-opponent [id]="opponent.id" [meanProp]="opponent.meanProp" [name]="opponent.name" [directions]="opponent.directions" [img]="opponent.img" [highlight]="opponent.highlight"></tg-opponent>
+      </li>
+    </ul> 
+  </div> <!-- #opponents -->
+  <div id="opponent-button"><button (click)="selectOpponent()">Select Player</button></div>
+</div> <!-- #opponents-panel -->
+
+<div *ngIf="inTrial" id="trial-panel">
+  <div class="participant card player">
+    <div class="player-info">
+      <img [src]="playerImgPath">
+        <div class="player-name">{{ curParticipantService.name | capitalize}}</div> 
+    </div>
+  </div> <!-- #participant -->
+
+  <div class="interactive-panel">
+    <div class="interactive-elements" [@flip]="flip">
+      <div class="endowmment flip-side card">
+        <div *ngIf="gameService.delayEvents.isWaitingForOpp" class="delay">
+          <p>
+            Waiting for {{ opponent.player.name }}
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+          </p>
+        </div>
+        <div *ngIf="!gameService.delayEvents.isWaitingForOpp">
+          <p>How much would you like to invest?</p>
+          <form id="endowment-form" (ngSubmit)="setEndowment()">
+            <input type="range" name="endowmentSlider" [(ngModel)]="this.endowment" min="0.1" max="1" value=".5" step=".1"> 
+            <div id="endowment-amount">{{ endowment | currency : 'USD' : true : '1.2-2' }}</div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="feedback flip-side card">
+        <div *ngIf="gameService.delayEvents.isWaitingForReturn" class="delay">
+          <p>
+            Waiting for {{ opponent.player.name }}
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+            <span class="dot">.</span>
+          </p>
+        </div>
+        <div *ngIf="!gameService.delayEvents.isWaitingForReturn">
+          <p>You invested <strong>{{ endowment | currency:'USD':true:'1.2-2' }}</strong>, and kept 
+            <strong>{{ (1 - endowment).toFixed(2) | currency:'USD':true:'1.2-2' }}</strong> for yourself.</p>
+          <p>{{ opponent.player.name }} received <strong>{{ (endowment * 4).toFixed(2) | currency:'USD':true:'1.2-2' }}</strong> and returned 
+            <strong>{{ oppReturn | currency:'USD':true:'1.2-2' }}</strong> to you.</p>
+          <button (click)="nextTrial()">Next Round</button>
+        </div> 
+      </div> <!-- .feedback -->
+    </div> <!-- .interactive-elements -->
+  </div> <!-- .interactive-panel -->
+
+  <div class="opponent card player">
+    <div class="player-info">
+      <img [src]="opponent.img">
+      <div class="player-name" 
+          [ngStyle]="{'background-image': opponent.player.id === 1 ? 'url(' + pixelPaths['blue'] + ')' : opponent.player.id === 2 ? 'url(' + pixelPaths['yellow'] + ')' : 'url(' + pixelPaths['orange'] + ')'}">
+        {{ opponent.player.name }}
+      </div>
+    </div>
+  </div>  <!-- #opponent -->
+
+</div> <!-- #trial-panel -->
+</div> <!-- #game-panel -->
+
+<div *ngIf="isGameOver" class="game-over-panel card">
+    <h4>Congratulations!</h4> 
+    <p>You have completed the game.</p>
+    <div class="nav-button">
+        <tg-nav-button url="payoff" label="Proceed"></tg-nav-button>
+    </div>
+</div> <!-- #game-over -->

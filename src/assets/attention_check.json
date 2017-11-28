@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "question": "<h3>What happens if you decide to invest $0.40 during a round?</h3>",
+    "a": "I get to keep $0.60 for myself, and the other $0.40 gets quadrupled to $1.60. The other player then decides how much to give back to me.",
+    "b": "I get to keep $0.40 for myself, and then the other $0.60 gets tripled to $1.80. The other player then gives me back half of it.",
+    "ans": "1"
+  },
+  {
+    "id": 2,
+    "question": "<h3>What happens when you press the red button?</h3>",
+    "a": "I will be asked to select one of three players to play with on that round.",
+    "b": "I will be randomly paired with one of three players on that round.",
+    "ans": "2"
+  },
+  {
+    "id": 3,
+    "question": "<h3>What is the best strategy for success in this game?</h3>",
+    "a": "To try to receive as much money as possible on each round as two of my rounds will be randomly selected to determine my bonus payment.",
+    "b": "To try to accrue as many points as possible, as the total number of points will determine my bonus payment.",
+    "ans": "1"
+  }
+]

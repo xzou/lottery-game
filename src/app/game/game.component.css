@@ -1,0 +1,197 @@
+.opponents-panel {
+  width: 1150px;
+  margin: auto;
+  padding: 2% 0 0 0;
+}
+
+.opponents-panel ul {
+  list-style-type: none;
+}
+
+.opponents-panel li {
+  float: left;
+  margin-right: 70px;
+}
+
+.opponents-panel ul:last-child {
+  margin-right: 0px;
+}
+
+#opponents {
+  padding-left: 3.5%;
+}
+
+#opponent-button {
+  clear: both;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: #f71b44;
+}
+
+#opponent-button button {
+  margin-top: 20%;
+  border-radius: 90%;
+  width: 130px;
+  height: 130px;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+  -moz-box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+  box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+}
+
+h4 {
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 2px 0 white;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  padding-top: 70px;
+}
+
+#trial-panel {
+  width: 1190px;
+  margin: 8% auto 0 auto;
+  padding-left: 4%;
+}
+
+.participant, .interactive-panel, .opponent {
+  float: left;
+  margin-right: 60px;
+}
+
+.interactive-panel {
+  perspective: 800px;
+}
+
+.interactive-elements {
+  position: relative;
+  width: 450px;
+  height: 380px;
+  transform-style: preserve-3d;
+}
+
+.flip-side {
+  width: 100%;
+  height: 100%;
+  padding: 7% 10% 0 13%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+
+.feedback {
+  transform: rotateY(179.9deg);
+}
+
+.participant .player-name {
+  background-image: url('/assets/images/pixel_purple.png');
+  background-repeat: repeat;
+}
+
+.interactive-panel p {
+  font-size: 20px;
+}
+
+.delay {
+  text-align: center;
+  padding-top: 29%;
+}
+
+.delay p {
+  font-size: 25px;
+}
+
+#endowment-amount {
+  font-family: 'Raleway';
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #444;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  border: 1px solid white;
+  width: 325px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 325px;
+  height: 3px;
+  background: #444;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 25px;
+  width: 10px;
+  background: #f71b44;
+  margin-top: -10px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  width: 325px;
+  height: 3px;
+  background: #444;
+  border: none;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 25px;
+  width: 10px;
+  background: #f71b44;
+}
+
+.interactive-panel button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.feedback h4 {
+  padding: 0 0 20px 0;
+}
+
+.round-num {
+  margin: -60px auto 10px auto;
+  width: 300px;
+  height: 130px;
+  border-radius: 40px;
+  background-color: #f71b44;
+  color: white;
+  -webkit-box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+  -moz-box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+  box-shadow: -1px 3px 30px -4px rgba(68,68,68,1);
+}
+
+.game-over-panel {
+  width: 550px;
+  height: 330px;
+  margin: 13% auto 0 auto;
+  padding: 0% 5% 0 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.game-over-panel h4 {
+  font-size: 35px;
+}
+
+.nav-button {
+  width: 130px;
+  margin: 70px auto 0 auto;
+}

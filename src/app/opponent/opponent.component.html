@@ -1,0 +1,7 @@
+<div [@highlight]="highlight" class="card player">
+  <div class="player-info">
+    <div><img [src]="img"></div>
+    <div class="player-name" 
+      [ngStyle]="{'background-image': player.id === 1 ? 'url(' + pixelPaths['blue'] + ')' : player.id === 2 ? 'url(' + pixelPaths['yellow'] + ')' : 'url(' + pixelPaths['orange'] + ')'}">{{ player.name }}</div>
+  </div> <!-- #player-info -->
+</div> <!-- #player -->
