@@ -18,7 +18,6 @@ import { InstructionsComponent } from './instructions/instructions.component';
 import { InstructionComponent } from './instruction/instruction.component';
 import { NavButtonComponent } from './nav-button/nav-button.component';
 import { QuizComponent } from './quiz/quiz.component';
-import { OpponentSearchComponent } from './opponent-search/opponent-search.component';
 import { CodeComponent } from './code/code.component';
 import { PayoffComponent } from './payoff/payoff.component';
 
@@ -38,7 +37,6 @@ import { TerminationComponent } from './termination/termination.component';
     InstructionComponent,
     NavButtonComponent,
     QuizComponent,
-    OpponentSearchComponent,
     CodeComponent,
     PayoffComponent,
     CapitalizePipe,
