@@ -13,13 +13,14 @@ export class IpRouteGuardService implements CanActivate {
               private router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    return this.ipService.isNewIp().map(res => {
+    /*return this.ipService.isNewIp().map(res => {
       if (res) {
         return true;
       } else {
         this.router.navigateByUrl('/end', { replaceUrl: true });
         return false;
       }
-    }); 
+    });  */
+    return true;
   }
 }
