@@ -6,10 +6,6 @@ export class GameService {
 
   endowmentT0: number;
   endowmentT1: number;
-  delayEvents = {
-    isWaitingForOpp: false,
-    isWaitingForReturn: false
-  }
   oppIds: number[];
 
   constructor() { }

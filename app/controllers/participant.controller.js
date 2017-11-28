@@ -25,6 +25,7 @@ exports.create = (req, res) => {
 
     var newParticipant = new Participant({
         age: req.body.age,
+        experiment: 2,
         gender: req.body.gender,
         ip: req.body.ip,
         isComplete: req.body.isComplete,

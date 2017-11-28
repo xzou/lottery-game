@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 
 var ParticipantSchema = mongoose.Schema({
     age: Number, 
+    experiment: Number,
     gender: String,
     ip: String,
     isComplete: Boolean,
