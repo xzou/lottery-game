@@ -104,6 +104,7 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     setTimeout(() => {
         this.inTrial = true;
         this.oppSettings[oppId].highlight = 'white';
+        this.gameService.endowmentT0 = performance.now();
     }, 1200);
     let oppId = this.gameService.getOppId(this.trialNumber); 
     this.oppSettings[oppId].highlight = 'red';
