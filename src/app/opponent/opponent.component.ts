@@ -13,7 +13,7 @@ import { Opponent } from './opponent';
         background: 'white'
       })),
       state('red', style({
-        background: '#f71b58'
+        background: '#f71b44'
       })),
       transition('white => red', animate('300ms ease-in'))
     ])
