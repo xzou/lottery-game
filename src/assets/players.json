@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Machine A",
+        "name": "I-Bot-A5",
         "meanProp": 0.02,
         "directions": [1, 1, -1],
         "img": "",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Machine B",
+        "name": "Chip-5",
         "meanProp": 0.25,
         "directions": [-1, 1, 1],
         "img": "",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Machine C",
+        "name": "Bors-5",
         "meanProp": 0.45,
         "directions": [-1, -1, 1],
         "img": "",
