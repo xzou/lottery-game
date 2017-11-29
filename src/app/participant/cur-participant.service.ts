@@ -13,9 +13,9 @@ export class CurParticipantService {
     gender: '',
     ip: '',
     isComplete: false,
-    isCorrect: false,
     mturkCode: '',
     name: '',
+    numCorrect: 0,
     payoff: 0,
     actualProportion: [],
     endowment: [],
@@ -70,12 +70,12 @@ export class CurParticipantService {
     this._participant.isComplete = state; 
   }
 
-  get isCorrect(): boolean {
-    return this._participant.isCorrect;
+  get numCorrect(): number {
+    return this._participant.numCorrect;
   }
 
-  set isCorrect(state: boolean) {
-    this._participant.isCorrect = state; 
+  set numCorrect(num: number) {
+    this._participant.numCorrect = num; 
   }
 
   get name(): string {

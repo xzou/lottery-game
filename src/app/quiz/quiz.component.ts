@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Http } from '@angular/http';
 
@@ -13,7 +13,7 @@ import { ParticipantService } from '../participant/participant.service';
   providers: [ ParticipantService ]
 })
 
-export class QuizComponent implements OnInit {
+export class QuizComponent {
   answers: { value: string }[] = [
     { value: '0' },
     { value: '0' },
@@ -38,15 +38,15 @@ export class QuizComponent implements OnInit {
             });
   }
 
-  ngOnInit() {
-  }
-
   checkAnswer(): void {
     this.answersSubmitted = true;
     this.numCorrect = this.answers.map((answer, idx) => {
       return +(answer.value === this.questions[idx].ans);
     })
     .reduce((total, current) => {return total + current}, 0);
+    this.curParticipantService.numCorrect = this.numCorrect;
+    this.participantService.updateParticipant(this.curParticipantService.participant)
+                            .subscribe();
   }
 
   isValid(): boolean {

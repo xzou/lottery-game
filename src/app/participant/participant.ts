@@ -4,9 +4,9 @@ export class Participant {
     public gender?: string;
     public ip?: string;
     public isComplete?: boolean; 
-    public isCorrect?: boolean;
     public mturkCode?: string;
     public name?: string;
+    public numCorrect?: number;
     public payoff?: number;
     public actualProportion?: number[];
     public endowment?: number[];
