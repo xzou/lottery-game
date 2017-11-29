@@ -45,6 +45,11 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     '/assets/images/machine_yellow.png',
     '/assets/images/machine_orange.png'
   ]
+  initPropAndDirections: any[] = [
+    { prop: .02, dir: [1, 1, -1] },
+    { prop: .25, dir: [-1, 1, 1] },
+    { prop: .45, dir: [-1, -1, 1] }
+  ];
   oppSettings: {
     id: number,
     name: string,
@@ -68,7 +73,8 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     this.http.get('/assets/players.json')
         .subscribe(res => {
           this.oppSettings = res.json();
-          this.setColors();
+          this.setInit(this.setColors.bind(this));
+          this.setInit(this.setInitProportions.bind(this));
         });
   }
 
@@ -138,13 +144,22 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     }
   }
 
-  setColors(): void {
+  setInit(setCondition) {
     let oppOrder = this.gameService.randomizeOpponents();
     this.oppSettings.forEach((opponent, index) => {
       let oppId = oppOrder[index];
-      opponent.img = this.imgPaths[oppId];
-      opponent.id = oppId + 1;
+      setCondition(opponent, oppId);
     });
+  }
+
+  setColors(opponent: any, oppId: number): void {
+    opponent.img = this.imgPaths[oppId];
+    opponent.id = oppId + 1;
+  }
+
+  setInitProportions(opponent: any, oppId: number): void {
+    opponent.meanProp = this.initPropAndDirections[oppId].prop;
+    opponent.directions = this.initPropAndDirections[oppId].dir;
   }
 }
 
