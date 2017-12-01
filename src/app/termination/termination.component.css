@@ -2,6 +2,12 @@
   width: 580px;
   height: 400px;
   margin: 12% auto 0 auto;
-  padding: 10% 5% 0 5%;
   text-align: center;
 }
+
+.message {
+  width: 400px;
+  margin: auto;
+  padding: 25% 0 25% 0;
+}
+

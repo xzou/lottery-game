@@ -1,0 +1,57 @@
+<div class="card type1-text">
+  <h2>mTurk Consent Form</h2>
+  <p><strong>Title of Project: </strong>{{ content?.title }}</p>
+  <p><strong>Investigator: </strong>{{ content?.investigator }}</p>
+  <div>
+    <strong>Purpose of study</strong>
+    <div [innerHTML]="content?.purpose.par1"></div>
+    <div [innerHTML]="content?.purpose.par2"></div>
+    <ul>
+      <li *ngFor="let item of content?.purpose.list1">{{ item }}</li>
+    </ul>
+    <div [innerHTML]="content?.purpose.par3"></div>
+    <ul>
+      <li *ngFor="let item of content?.purpose.list2">{{ item }}</li>
+    </ul>
+    <span [innerHTML]="content?.purpose.par4"></span>
+    <ol>
+      <li *ngFor="let item of content?.purpose.list3">{{ item }}</li>
+    </ol>
+  </div>
+  <div>
+    <strong>Potential Risks and Benefits</strong>
+    <span [innerHTML]="content?.risks"></span>
+  </div>
+  <div>
+    <strong>Rights</strong>
+    <span [innerHTML]="content?.rights"></span>
+  </div>
+  <div>
+    <strong>Compensation</strong>
+    <span [innerHTML]="content?.compensation"></span>
+  </div>
+  <div>
+    <strong>Confidentiality of data</strong>
+    <span [innerHTML]="content?.confidentiality"></span>
+  </div>
+  <div>
+    <strong>Further questions</strong>
+    <span [innerHTML]="content?.questions"></span>
+  </div>
+  <p>You may print this page for your records.</p>
+  <form #consentForm="ngForm" (ngSubmit)="checkConsent()" class="quiz-radio">
+    <ul *ngFor="let choice of content?.consent; let idx = index">
+      <li>
+        <label for="{{idx}}">
+          <input type="radio" [id]="idx" name="consent" [(ngModel)]="consent" [value]="idx + 1">
+          <span [innerHTML]="choice"></span>
+        </label>
+      </li>
+    </ul>
+    <div class="submit-button">
+      <button type="submit" [disabled]="consent === 0">Submit</button>
+    </div>
+  </form>
+</div>
+
+

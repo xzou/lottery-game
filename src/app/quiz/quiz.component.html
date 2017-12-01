@@ -1,6 +1,6 @@
 <div *ngIf="!answersSubmitted" class="question-panel card">
   <h2>Quiz</h2>
-  <form (ngSubmit)="checkAnswer()" class="type1-text">
+  <form (ngSubmit)="checkAnswer()" class="quiz-radio type1-text">
     <div *ngFor="let question of questions; let idx=index">
       <span [innerHTML]="question.question"></span>
       <ul>

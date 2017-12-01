@@ -22,27 +22,6 @@
   padding-left: 8%;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul>li {
-  margin-bottom: 15px;
-}
-
-label {
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 140%;
-}
-
-label span {
-  display: block;
-  margin-left: 25px;
-  margin-top: -23px;
-}
-
 button {
   float: right;
 }

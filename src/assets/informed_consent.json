@@ -1,0 +1,40 @@
+{
+  "title": "Study of Economic Decision Making",
+  "investigator": "Dr. Oriel FeldmanHall",
+  "purpose": {
+    "par1": " <p>You have been invited to take part in a research study to learn more about decision-making.  This study will be conducted by Dr. Oriel FeldmanHall, Department of Cognitive, Linguistics and Psychological Sciences, Brown University, or by a designated member of her research staff. The purpose of the study is to examine the psychology of economic decision-making. We hope the research will help us to increase our understanding of how certain decisions are made within various settings.</p>",
+    "par2": "<p>If you agree to be in this study, you will be asked to complete the following procedures.</p>",
+    "list1": [
+      "Perform a series of computerized decision-making tasks (some of these tasks may offer additional incentives over and above your base pay, see Compensation)",
+      "Fill out a number of questionnaires assessing your subjective experiences, general preferences, and demographic information",
+      "View and/or respond to visual stimuli on a computer screen",
+      "Listen and/or respond to auditory stimuli",
+      "Make monetary decisions on behalf of yourself and (or) other individuals"
+    ],
+    "par3": "<p>This would require the following possible behavioral assessments to be recorded:</p>",
+    "list2": [
+      "Explicit memory choices",
+      "Explicit choices between options",
+      "Other explicit evaluations of stimuli",
+      "Reaction times",
+      "Ratings of stimuli",
+      "Demographics information: We will ask you to provide some general demographic information about yourself. This information may include name, date of birth, address, phone number, gender, race, education, etc."
+    ],
+    "par4": "<p>If you agree to participate in this study, you will be presented with a series of decisions about money and may be asked to do the following:</p>",
+    "list3": [
+      "Make responses or merely observe them",
+      "Understand that during the experiment you may win or lose money",
+      "Make responses regarding monetary outcomes for other people",
+      "Complete some questionnaires related to the study"
+    ]
+  },
+  "risks": "<p>Computer-based experiments only involve operating a computer. The tasks involved in these experiments can require some mental effort, and you may therefore experience some fatigue during the experiment.</p><p>There is a risk that you may find some of the visual or auditory stimuli in today’s session distressing. Please alert the experimenter at any time during the session if you would prefer not to complete the study. Please refer to the “Rights” section of this document for more information.</p><p>There exists a potential risk of embarrassment should your responses in this study become publicly associated with your identity. This risk is minimized in the following ways: 1) data we collect from you that could be used to identify you is stored separately from data that contains your responses in this study; 2) anonymized study IDs are assigned to your responses instead of direct identifiers on all study documents; 3) access to data that could be used to identify you is strictly restricted to trained members of the research team; 4) any data that is shared with other researchers will be completely anonymized and analyzed only in aggregate, so that you can never be personally identified from shared data.<p>Although you will receive no direct benefits, this research may help the investigator understand more about decision-making. Participation in this study is voluntary.  You may refuse to participate or withdraw at any time without penalty.</p>",
+  "rights": " <p>Your participation in this study is completely voluntary, and you may withdraw at any time without penalty.  If you withdraw, you will receive full hourly payment. You may withdraw by closing the browser window in which you are completing the study and emailing our research staff at feldmanhall.lab@gmail.com to indicate that you have withdrawn. No questions will be asked. Because it is important to have complete response data in our analyses, we ask that you complete all of the questionnaires fully and honestly. If you are not comfortable answering particular questions in any of the questionnaires in this study, you are free to exit the study at any time without penalty. There may be aspects or purposes of this experiment that we will not disclose until after you have finished the task. If you are participating in a study in which this is the case, you will be fully debriefed about all aspects of the study at the end and will have opportunities to ask any questions you may have about the study by emailing our research staff at feldmanhall.lab@gmail.com.</p>",
+  "compensation": "<p>You will be paid a base rate for each study completed. Base rates range from $.50 for short 3-5-minute tasks to $5.00 for hour-long studies. In addition to this compensation, you may receive additional compensation in the form of monetary rewards based on your choices and/or performance on the tasks.</p>",
+  "confidentiality": " <p>All data will be identified by a code, with names kept in a locked file. Only qualified members of the research team will have access to data that could be used to identify you. Data may be digitally shared with other researchers. Any data that is shared will be completely anonymized, such that your responses can never become publicly associated with your identity.</p>",
+  "questions": " <p>If there is anything about the study or your participation that is unclear or that you do not understand, if you have questions or wish to report a research-related problem, you may contact members of Dr. Oriel FeldmanHall’s research staff at 401-863-5658, feldmanhall.lab@gmail.com, Brown University, 190 Thayer St, Providence RI 02912.</p><p>If you have questions about your rights and welfare as a volunteer in the research study you may contact the Brown University Human Research Protection Program at (401) 863-3050. (If out of state, use the toll-free number 1-866-309-2095.) You may also email the office at rpo@brown.edu.</p>",
+  "consent": [
+    "I agree and acknowledge that clicking this box indicates that I understand everything in this consent document, and that I give my consent to participate.",
+    "I do not agree"
+  ]
+}

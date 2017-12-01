@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
 const dbConfig = require('./config/database.config.js');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 
 // Create express app
 const app = express();

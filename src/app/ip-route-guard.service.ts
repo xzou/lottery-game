@@ -17,7 +17,7 @@ export class IpRouteGuardService implements CanActivate {
       if (res) {
         return true;
       } else {
-        this.router.navigateByUrl('/end', { replaceUrl: true });
+        this.router.navigate(['/end'], { replaceUrl: true, queryParams: { condition: '1' } });
         return false;
       }
     });  

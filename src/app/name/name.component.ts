@@ -53,7 +53,7 @@ export class NameComponent implements OnInit {
           this.curParticipantService.ip = participant.ip;
           this.curParticipantService.name = participant.name;
 
-          this.router.navigateByUrl('/instructions', { replaceUrl: true });
+          this.router.navigateByUrl('/informed-consent', { replaceUrl: true });
         }); 
   } 
 

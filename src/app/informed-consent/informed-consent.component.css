@@ -1,0 +1,24 @@
+.card {
+  width: 900px;
+  height: auto;
+  margin: 5% auto 5% auto;
+  padding: 3% 5% 5% 5%;
+}
+
+div {
+  font-size: 18px;
+}
+
+p {
+  line-height: 130%;
+}
+
+ul {
+  margin: 8px 0;
+}
+
+.submit-button {
+  margin: auto;
+  width: 118px;
+}
+

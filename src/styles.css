@@ -124,6 +124,27 @@ button[disabled] {
   padding-left: 18%;
 }
 
+.quiz-radio ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-radio ul>li {
+  margin-bottom: 15px;
+}
+
+.quiz-radio label {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 140%;
+}
+
+.quiz-radio label span {
+  display: block;
+  margin-left: 25px;
+  margin-top: -23px;
+}
+
 @keyframes blink {50% { color: transparent }}
 .dot { animation: 1s blink infinite }
 .dot:nth-child(2) { animation-delay: 250ms }
