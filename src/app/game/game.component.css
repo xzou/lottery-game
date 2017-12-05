@@ -32,6 +32,11 @@ button {
   background-color: #f71b44;
 }
 
+button:disabled,
+button[disabled] {
+  color: white;
+}
+
 #opponent-button button {
   margin-top: 20%;
   border-radius: 90%;

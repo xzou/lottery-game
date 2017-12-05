@@ -38,6 +38,7 @@ export class GameComponent implements AfterViewInit, OnDestroy {
   netGain: number = 0;
   opponent: OpponentComponent; 
   oppReturn: number; 
+  oppSelected: boolean;
   playerImgPath: string = '/assets/images/player_purple.png';
   trialNumber: number = 1;
   imgPaths: string[] = [
@@ -104,9 +105,11 @@ export class GameComponent implements AfterViewInit, OnDestroy {
     this.isGameOver = this.gameService.checkGameOver(this.trialNumber); 
     this.trialNumber++;
     this.flip = 'inactive';
+    this.oppSelected = false;
   }
 
   selectOpponent(): void {
+    this.oppSelected = true;
     setTimeout(() => {
         this.inTrial = true;
         this.oppSettings[oppId].highlight = 'white';
